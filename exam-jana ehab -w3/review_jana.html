@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        .review
+        {
+            background-color: rgb(29, 87, 87);
+            width: 120pc;
+            height: 200px;
+            padding-top:50px;
+
+        }
+        .items{
+            align-items: center;
+            justify-content: center;
+            display: block;
+            padding-left: 35pc;
+            
+        }
+        .design
+        {
+            font-size:40px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="review">
+        <div class="items">
+            <label class="design"> Q1:Are you satified with our service</label><br>
+            <input id="radia" name="rere" type="radio" >yes   <input id="radia" name="rere" type="radio" >no<br>
+            <label class="design"> Q1:Do you find our website user_friendly</label><br>
+            <input id="radia" name="rer" type="radio" >yes   <input id="radia" name="rer" type="radio" >no<br>
+            <label  class="design"> Q1:WOULD YOU reccomend us to others</label><br>
+            <input id="radia" name="ree" type="radio" >yes   <input id="radia" name="ree" type="radio" >no<br>
+        </div>
+
+    </div>
+    <script>
+        var arr=[{}];
+        function forgete()
+        {
+            var count_yes=0;
+            var count_no=0;
+            var all_radio=document.querySelectorAll("input[type='radio']").value;
+            for( i=0;i<all_radio.length;i++)
+            {
+                if( arr[i].checked==arr[i]=="yes")
+                {
+                    count_yes++;
+                }
+                else if(arr[i].checked==arr[i].value=="no")
+                {
+                    count_no++;
+                }
+            
+            }alert( `${count_yes},${count_no}` );
+        }
+
+    </script>
+</body>
+</html>

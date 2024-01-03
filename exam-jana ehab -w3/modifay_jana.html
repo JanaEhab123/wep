@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        } .cointainer
+        {
+            background-color: darkcyan;
+        }
+        .header
+        {
+            background-color: darkcyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             border: 10px solid;
+              justify-content: space-around;
+               text-decoration: none;
+        }
+        .contain
+        { 
+            background-color: blanchedalmond;
+            
+            display: grid;
+            grid-template-columns: repeat(2,30rem);
+
+        }
+        .footer
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: crimson; 
+}
+.summary
+{
+    background-color: darkgray;
+    width: 25vw;
+    height: 30vw;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,20rem);
+    
+}
+.iml
+{
+    justify-content: space-between;
+    margin-top: 11pc;
+    padding: 70px;
+}
+.imlre
+{
+    display:flex;
+}
+
+ .design
+ {
+    font-size: 30px;
+ }
+ .desig
+ {
+    font-size: 40px;
+ }
+ .des{
+    font-size: 40px;
+    background-color: rgb(37, 5, 153);
+ }
+ .price
+ {
+    padding-top: 10pc;
+ }
+ .img
+ {
+    width: 20vw;
+    height: 20vw;
+ }
+ .slider
+ {
+   
+    display: grid;
+    grid-template-columns: repeat(1,20rem);
+}
+#item1:target
+{
+display: none;
+}
+#item1:not(:target)
+{
+display: block;
+}
+.right
+{
+   justify-content: space-between;
+   padding-left: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="app"> my application name ecomierss</p><br>
+             <a onclick="slider(0)">clothes</a><br>
+             <a  onclick="slider(1)">shoes</a><br>
+             <a onclick="slider(2)">bags</a><br>
+             <a onclick="slider(3)">watches</a><br>
+        </div>
+        <div class="slider">
+            
+           <div id="item1" class="contain">
+           <table id="modify">
+            <tr>
+                <td>
+                     <div class="imlre">
+                    <div  class="right">
+                        <img src="T_shirt2 - Copy.jfif" alt="product photo">
+                        <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <img  src="pant3 - Copy.jpg" alt="product photo" class="imgs" >
+                          <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                    </div>
+                    <div class="iml">
+                     <button class="bord">- 1 +</button><br>
+                           <span>$75</span><br>
+                     <button class="bord">- 1 +</button> <br>
+                         <span>$75</span><br>
+                    </div>
+                  </div>
+
+                </td>
+                <td class="right">
+                    <div class="summary">
+                        <div>
+                          <p class="desig">summary</p><br>
+                          <label class="design" >subtotal</label><br>
+                          <label  class="design">shipping</label><br>
+                          <label  class="design">totale</label><br>
+                          <button class="des" >check out</button><br>
+                        </div>
+                             <div class="price">
+                                <span> $150.000</span><br>
+                                <span> $20.000</span><br>
+                                <span> $170,000</span><br>
+                             </div>
+                      </div>
+
+                </td>
+            </tr>
+           </table>
+           <table id="modify">
+            <tr>
+                <td> 
+                    <div  class="right">
+                        <img src="pant1 - Copy.jpg" alt="product photo">
+                        <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <img  src="jordan - Copy.png" alt="product photo" class="imgs" >
+                          <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <div class="iml">
+                            <button class="bord">- 1 +</button><br>
+                                  <span>$75</span><br>
+                            <button class="bord">- 1 +</button> <br>
+                                <span>$75</span><br>
+                           </div>
+
+                  </div>
+
+                </td>
+                <td class="right">
+                    <div class="summary">
+                        <div>
+                          <p class="desig">summary</p><br>
+                          <label class="design" >subtotal</label><br>
+                          <label  class="design">shipping</label><br>
+                          <label  class="design">totale</label><br>
+                          <button class="des" >check out</button><br>
+                        </div>
+                             <div class="price">
+                                <span> $150.000</span><br>
+                                <span> $20.000</span><br>
+                                <span> $170,000</span><br>
+                             </div>
+                      </div>
+
+                </td>
+            </tr>
+           </table>
+           <table id="modify">
+            <tr>
+                <td> 
+                    <div  class="right">
+                        <img src="T_shirt1 - Copy.jfif" alt="product photo">
+                        <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <img  src="hippie2.png" alt="product photo" class="imgs" >
+                          <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <div class="iml">
+                            <button class="bord">- 1 +</button><br>
+                                  <span>$75</span><br>
+                            <button class="bord">- 1 +</button> <br>
+                                <span>$75</span><br>
+                           </div>
+                        </div>
+
+                </td>
+                <td class="right">
+                    <div class="summary">
+                        <div>
+                          <p class="desig">summary</p><br>
+                          <label class="design" >subtotal</label><br>
+                          <label  class="design">shipping</label><br>
+                          <label  class="design">totale</label><br>
+                          <button class="des" >check out</button><br>
+                        </div>
+                             <div class="price">
+                                <span> $150.000</span><br>
+                                <span> $20.000</span><br>
+                                <span> $170,000</span><br>
+                             </div>
+                      </div>
+
+                </td>
+            </tr>
+           </table>
+           <table id="modify4">
+            <tr>
+                <td> 
+                    <div  class="right">
+                        <img src="T_shirt2 - Copy.jfif" alt="product photo">
+                        <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <img  src="Cap1 - Copy.jfif" alt="product photo" class="imgs" >
+                          <bre>
+                            <p>this product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam at praesentium aliquid reiciendis consequuntur soluta dignissimos debitis quam, aut repudiandae cum, ipsam laboriosam ullam voluptatem veritatis odio officiis quod!</p>
+                          </bre>
+                          <div class="iml">
+                            <button class="bord">- 1 +</button><br>
+                                  <span>$75</span><br>
+                            <button class="bord">- 1 +</button> <br>
+                                <span>$75</span><br>
+                           </div>
+                    </div>
+
+                </td>
+                <td class="right">
+                    <div class="summary">
+                        <div>
+                          <p class="desig">summary</p><br>
+                          <label class="design" >subtotal</label><br>
+                          <label  class="design">shipping</label><br>
+                          <label  class="design">totale</label><br>
+                          <button class="des" >check out</button><br>
+                        </div>
+                             <div class="price">
+                                <span> $150.000</span><br>
+                                <span> $20.000</span><br>
+                                <span> $170,000</span><br>
+                             </div>
+                      </div>
+
+                </td>
+            </tr>
+           </table>
+        </div>
+        </div>
+        <div class="footer"> 
+          <label>contact us</label>
+          <bre></bre>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima veritatis hic deserunt deleniti libero, possimus eum harum voluptas magni dolores provident quisquam. Sequi provident, a</p>
+        </bre>
+        <label>contact us</label>
+          <bre></bre>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima veritatis hic deserunt deleniti libero, possimus eum harum voluptas magni dolores provident quisquam. Sequi provident, a</p>
+        </bre>
+        <label>contact us</label>
+          <bre></bre>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima veritatis hic deserunt deleniti libero, possimus eum harum voluptas magni dolores provident quisquam. Sequi provident, a</p>
+        </bre>
+        </div>
+    </div>
+    <script>
+        function slider(p) {
+            document.getElementById('item1')=`${-100*p}vw`
+        }
+    </script>
+</body>
+</html>

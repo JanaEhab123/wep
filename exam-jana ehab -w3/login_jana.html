@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="login_jana.js" rel="script">
+   <style>
+    body{
+        background-color: thistle;
+        
+    }
+    .log
+    {
+        background-color: burlywood;
+        width: 15pc;
+        height: 25pc;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-top: 15px;
+        margin: auto;
+        
+        
+    }
+    .design
+    {
+        font-size: 30px;
+    }
+    .sign{
+        padding-top:20px ;
+        background-color: rgb(60, 2, 63);
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .p
+    {
+        font-size: 30px;
+    }
+   </style>
+</head>
+<body>
+    <div>
+    <div class="log" id="login">
+        <p class="p">log in</p>
+      <label class="design" id="name">user name</label><br>
+      <input type="text" ><br>
+      <label class="design" id="pass">password</label><br>
+      <input type="password" ><br>
+      <button onclick=" return log();" class="sign"> <a href="../exam-jana ehab -w3/review_jana.html">log in</a></button><br>
+      <button class="sign"><a href="#signup"> sign in</a></button><br>
+      <button  class="sign"><a href="#passs">forget password</a></button><br>
+    </div>
+
+     <div class="log" id="signup">
+        <p class="p">sign up</p>
+        <label class="design"  id="name2"> name</label><br>
+        <input type="text"><br>
+        <label class="design"  id="pass2"> password</label><br>
+        <input type="password"><br>
+        <label class="design"  id="age"> age</label><br>
+        <input type="text"><br>
+        <label class="design"  id="gender"> gender</label><br>
+        <input name="red" type="radio">male<br>
+        <input name="red" type="radio"> female<br>
+        <button onclick=" return sign();" class="sign"> <a href="#login"> sign up</a></button><br>
+     </div>
+
+     <div class="log" id="passs">
+        <p class="p">forget password</p>
+        <label class="design"  id="name3"> name</label><br>
+        <input type="text"><br>
+        <label class="design"  id="pass3"> name</label><br>
+        <input type="password"><br>
+        <button onclick=" return forget() " class="sign"> <a href="#login">update</a></button><br>
+     </div>
+
+
+</div>
+<script>
+var arr=[{username:"",password:"",age:"",gender:"",phone:"" }];
+function log()
+{
+    var username=document.getElementById('name').value;
+    var password=document.getElementById('pass').value;
+    if( arr[username]=== username.value && arr[password]=== password.value)
+    {
+        alert("your login successfully");
+    }
+    else
+    {
+        alert("you have an error");
+    }
+}
+function sign()
+{
+    var username=document.getElementById('name2').value;
+    var password=document.getElementById('pass2').value;
+    var age= document.getElementById('age').value;
+    var gender= document.getElementById('gender').value;
+    var phone= document.getElementById('phone').value;
+    var regecs=/?.([A-Z])?.(a-z)?.([!@#$%^&*()_+])?.([0-9])/;
+    if( phone.length==11 && regecs.test(password) && password.length<8 && age.length>18 &&age.length<60)
+    {
+        arr.push(username,password,age,gender,phone);
+        return true;
+    }
+
+    
+   
+}
+function forget()
+{ 
+    var username=document.getElementById('name3').value;
+    var password=document.getElementById('pass3').value;
+    for( x=0;x<arr.length-1;x++)
+    {
+        if( arr.indexOf[0,1] !=="")
+        {
+            arr.pop(0,1);
+            arr.pup(username,password);
+        }
+      
+    } 
+}
+</script>
+</body>
+</html>
